@@ -33,7 +33,7 @@ resource "aws_security_group" "app_sg" {
   name        = "app-sg"
   description = "Application access group"
 
-  ingress {
+  ingress = []
     description = "Remote administration"
     from_port   = 22
     to_port     = 22
